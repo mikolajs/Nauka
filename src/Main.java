@@ -16,6 +16,7 @@ class Main {
             s = s.multiply(BigInteger.valueOf(n));
             n--;
         }
+        
         return s;
     }
 }
