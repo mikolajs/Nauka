@@ -14,6 +14,7 @@ class Main {
        System.out.println("Ilość liczb nieparzystych: " + zad.nieparzyste(tab));
        System.out.println("Ilość potęgi3: " + zad.potegi3(tab));
        System.out.println("Suma wszystkich cyfr: " + zad.sumaCyfr(tab));
+       System.out.println("NWD 80 i 32: " + zad.NWD(32, 80));
     }
 
     public static void saveFile(int[] tab, String plik) {

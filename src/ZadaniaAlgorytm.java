@@ -30,4 +30,19 @@ public class ZadaniaAlgorytm {
         }
         return suma;
     }
+
+    public int NWD(int a, int b) {
+        int c = 0;
+        if(a < b) {
+            c = b;
+            b = a;
+            a = c;
+        }
+        while(b != 0) {
+            c = a % b;
+            a = b;
+            b = c;
+        }
+        return a;
+    }
 }
