@@ -25,7 +25,7 @@ class Main {
         }
     }
 
-    public static int[] loadData(String plik) {
+    public static int[] loadData(String plik)  {
         int[] dane = new int[1000];
         Scanner sc = null;
         try {

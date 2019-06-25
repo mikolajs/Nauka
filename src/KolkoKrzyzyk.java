@@ -71,4 +71,9 @@ public class KolkoKrzyzyk {
            System.out.println();
        }
    }
+
+   @Override
+   public void finalize(){
+      if(sc != null) sc.close();
+   }
 }
