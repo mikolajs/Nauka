@@ -9,12 +9,10 @@ import java.util.Scanner;
 class Main {
 
     public static void main(String[] args) {
-       int [] tab = loadData("liczby_losowe.txt");
-       ZadaniaAlgorytm zad = new ZadaniaAlgorytm();
-       System.out.println("Ilość liczb nieparzystych: " + zad.nieparzyste(tab));
-       System.out.println("Ilość potęgi3: " + zad.potegi3(tab));
-       System.out.println("Suma wszystkich cyfr: " + zad.sumaCyfr(tab));
-       System.out.println("NWD 80 i 32: " + zad.NWD(32, 80));
+
+        KolkoKrzyzyk gra = new KolkoKrzyzyk();
+        gra.graj();
+        gra.drukuj();
     }
 
     public static void saveFile(int[] tab, String plik) {
@@ -35,6 +33,8 @@ class Main {
             for(int i = 0; i < 1000; i++) dane[i] = sc.nextInt();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } finally {
+            sc.close();
         }
         return dane;
     }
