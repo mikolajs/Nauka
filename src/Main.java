@@ -10,7 +10,7 @@ class Main {
 
     public static void main(String[] args) {
         Pesel pesel = new Pesel(12345678901L);
-        Pesel pesel2 = new Pesel("71052203932");
+        Pesel pesel2 = new Pesel("85061216432");
         Pesel pesel3 = new Pesel("71052203934");
 
         assert (pesel.isMale() == false);
