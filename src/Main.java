@@ -9,10 +9,11 @@ import java.util.Scanner;
 class Main {
 
     public static void main(String[] args) {
+        Pesel pesel = new Pesel(12345678901L);
+        Pesel pesel2 = new Pesel("71052203932");
+        assert (pesel.isMale() == false);
+        assert (pesel2.isMale() == true);
 
-        KolkoKrzyzyk gra = new KolkoKrzyzyk();
-        gra.graj();
-        gra.drukuj();
     }
 
     public static void saveFile(int[] tab, String plik) {
