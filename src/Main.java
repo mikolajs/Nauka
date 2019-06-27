@@ -11,9 +11,14 @@ class Main {
     public static void main(String[] args) {
         Pesel pesel = new Pesel(12345678901L);
         Pesel pesel2 = new Pesel("71052203932");
+        Pesel pesel3 = new Pesel("71052203934");
+
         assert (pesel.isMale() == false);
         assert (pesel2.isMale() == true);
-
+        System.out.println(pesel2.born());
+        assert (pesel2.isCorrect() == true);
+        assert (pesel3.isCorrect() == false);
+        System.out.println(pesel2);
     }
 
     public static void saveFile(int[] tab, String plik) {
