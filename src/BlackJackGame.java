@@ -28,12 +28,12 @@ public class BlackJackGame {
 
         player.addCard(stack.pop());
         player.addCard(stack.pop());
+        System.out.println(player.toString());
         char answer = ' ';
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("Wpisz N jeśli następną kartę, " +
                     "w przeciwnym wypadku dowolny klawisz");
-            System.out.println(player.toString());
             answer = scanner.next().trim().charAt(0);
             if(answer == 'n' || answer == 'N'){
                 player.addCard(stack.pop());
